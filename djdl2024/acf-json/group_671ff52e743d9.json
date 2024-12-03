@@ -1,0 +1,829 @@
+{
+    "key": "group_671ff52e743d9",
+    "title": "Home Content",
+    "fields": [
+        {
+            "key": "field_671ff52ea81e8",
+            "label": "Below Hero Headline",
+            "name": "below_hero_headline",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Check Out This Great Headline",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_671ff56ca81e9",
+            "label": "Below Hero Text",
+            "name": "below_hero_text",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 0,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_671ff582a81ea",
+            "label": "Below Hero Image",
+            "name": "below_hero_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "allow_in_bindings": 0,
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_671ff594a81eb",
+            "label": "Features",
+            "name": "features",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_671ff5b4a81ec",
+                    "label": "Feature Select",
+                    "name": "feature_select",
+                    "aria-label": "",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Icon": "icon",
+                        "Name": "name",
+                        "Image": "image",
+                        "Text": "text",
+                        "Button": "button"
+                    },
+                    "default_value": [],
+                    "return_format": "value",
+                    "allow_custom": 0,
+                    "allow_in_bindings": 0,
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "save_custom": 0,
+                    "custom_choice_button_text": "Add new choice",
+                    "parent_repeater": "field_671ff594a81eb"
+                },
+                {
+                    "key": "field_671ff6a5a81ed",
+                    "label": "Feature Icon",
+                    "name": "feature_icon",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_671ff5b4a81ec",
+                                "operator": "==",
+                                "value": "Icon"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "fa-solid fa-lightbulb",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_671ff594a81eb"
+                },
+                {
+                    "key": "field_671ff732a81ef",
+                    "label": "Feature Img",
+                    "name": "feature_img",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_671ff5b4a81ec",
+                                "operator": "==",
+                                "value": "Image"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "allow_in_bindings": 0,
+                    "preview_size": "medium",
+                    "parent_repeater": "field_671ff594a81eb"
+                },
+                {
+                    "key": "field_671ff6f7a81ee",
+                    "label": "Feature Name",
+                    "name": "feature_name",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_671ff5b4a81ec",
+                                "operator": "==",
+                                "value": "Name"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Feature",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_671ff594a81eb"
+                },
+                {
+                    "key": "field_671ff778a81f0",
+                    "label": "Feature Text",
+                    "name": "feature_text",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_671ff5b4a81ec",
+                                "operator": "==",
+                                "value": "Text"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Bacon ipsum dolor amet occaecat chislic et, anim cow aliqua pastrami do tongue beef ribs elit kielbasa kevin landjaeger.",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_671ff594a81eb"
+                },
+                {
+                    "key": "field_671ff7e2a81f1",
+                    "label": "Feature Button Icon",
+                    "name": "feature_button_icon",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_671ff5b4a81ec",
+                                "operator": "==",
+                                "value": "Button"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "fa-solid fa-caret-right",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_671ff594a81eb"
+                },
+                {
+                    "key": "field_671ff83ea81f2",
+                    "label": "Feature Button Text",
+                    "name": "feature_button_text",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_671ff5b4a81ec",
+                                "operator": "==",
+                                "value": "Button"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Learn More",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_671ff594a81eb"
+                },
+                {
+                    "key": "field_671ff86ca81f3",
+                    "label": "Feature Button Link",
+                    "name": "feature_button_link",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_671ff5b4a81ec",
+                                "operator": "==",
+                                "value": "Button"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "https:\/\/",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_671ff594a81eb"
+                }
+            ]
+        },
+        {
+            "key": "field_671ffcfd756bd",
+            "label": "Article Title",
+            "name": "article_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "This Is What It's All About",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_671ffd33756be",
+            "label": "Article Sub Header",
+            "name": "article_sub_header",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Bacon ipsum dolor amet ut doner est esse, jerky laboris ground round ribeye dolor kevin bacon porchetta in.",
+            "allow_in_bindings": 0,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_671ffd68756bf",
+            "label": "Article Text",
+            "name": "article_text",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Bacon ipsum dolor amet ea frankfurter consectetur jerky. Beef ribs t-bone consectetur est, culpa prosciutto commodo nostrud fugiat. Veniam lorem meatloaf pancetta, short loin beef ribs t-bone pariatur. Biltong labore doner eu. Laboris tenderloin aliquip burgdoggen labore.\r\n\r\nTempor salami ullamco, pork chop chicken exercitation bresaola ex buffalo sunt nisi. Pork landjaeger eu ball tip minim. Pariatur culpa buffalo pork loin beef. In tenderloin eiusmod shoulder incididunt sirloin. Ground round consequat filet mignon, officia dolore beef biltong deserunt.\r\n\r\nTurkey shank hamburger, irure aliqua short ribs exercitation ad in consequat mollit swine. Adipisicing venison anim bacon ex deserunt fugiat nisi pig sausage porchetta velit hamburger occaecat. Nisi ut salami frankfurter sed, in occaecat chicken. Labore esse strip steak, est leberkas pancetta sunt frankfurter ex ut excepteur nulla t-bone shankle sint. Pork bresaola turkey irure, strip steak magna incididunt prosciutto kielbasa tenderloin landjaeger aliqua. Ground round t-bone chicken occaecat sirloin sed ham leberkas flank hamburger. Sed et enim magna.\r\n\r\nTempor cupim voluptate leberkas aliquip brisket strip steak rump esse. Et short ribs cillum, excepteur sirloin ham bresaola esse. Meatloaf cupim ut, ribeye pastrami beef ribs ex short loin dolore capicola chislic duis venison filet mignon. Do lorem meatball shank. Buffalo elit leberkas pork chop laborum tail, quis aute veniam. Ground round nostrud et dolore incididunt id mollit short ribs nulla beef.",
+            "allow_in_bindings": 0,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_671ffd9d756c0",
+            "label": "Article Image",
+            "name": "article_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "allow_in_bindings": 0,
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_671ffdc4bd221",
+            "label": "Testimonials Title",
+            "name": "testimonials_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Testimonials",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_671ffe1dbd222",
+            "label": "Testimonials",
+            "name": "testimonials",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_671fff16bd223",
+                    "label": "Select Testimonial Features",
+                    "name": "select_testimonial_features",
+                    "aria-label": "",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Client Name": "client_name",
+                        "Graphic": "graphic",
+                        "Testimonial": "testimonial",
+                        "Image": "image",
+                        "BG Image": "bg_image",
+                        "Link": "link"
+                    },
+                    "default_value": [],
+                    "return_format": "value",
+                    "allow_custom": 0,
+                    "allow_in_bindings": 0,
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "save_custom": 0,
+                    "custom_choice_button_text": "Add new choice",
+                    "parent_repeater": "field_671ffe1dbd222"
+                },
+                {
+                    "key": "field_671fffa8bd224",
+                    "label": "Client Name",
+                    "name": "client_name",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_671fff16bd223",
+                                "operator": "==",
+                                "value": "Client Name"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "John Smith",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_671ffe1dbd222"
+                },
+                {
+                    "key": "field_6720007fbd226",
+                    "label": "Graphic Image",
+                    "name": "graphic_image",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_671fff16bd223",
+                                "operator": "==",
+                                "value": "Graphic"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "fa-solid fa-star",
+                    "maxlength": "",
+                    "allow_in_bindings": 1,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_671ffe1dbd222"
+                },
+                {
+                    "key": "field_67200041bd225",
+                    "label": "Testimonial",
+                    "name": "testimonial",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_671fff16bd223",
+                                "operator": "==",
+                                "value": "Testimonial"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Bacon ipsum dolor amet chuck id beef ribs dolor excepteur jowl non pig pork belly burgdoggen nisi. Venison sed kielbasa, chislic commodo minim drumstick nisi boudin eiusmod proident magna aute biltong id. Pig exercitation occaecat leberkas swine elit rump beef beef ribs cow culpa bacon tongue. Duis ullamco strip steak filet mignon nulla voluptate jowl pork belly pork chop tri-tip porchetta. Nulla commodo leberkas lorem veniam turducken velit. Cupim consequat jerky biltong sausage aliquip. Bresaola shankle t-bone picanha, drumstick short loin prosciutto pork.",
+                    "allow_in_bindings": 0,
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0,
+                    "parent_repeater": "field_671ffe1dbd222"
+                },
+                {
+                    "key": "field_672000b5bd227",
+                    "label": "BG Image",
+                    "name": "bg_image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_671fff16bd223",
+                                "operator": "==",
+                                "value": "BG Image"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "allow_in_bindings": 0,
+                    "preview_size": "medium",
+                    "parent_repeater": "field_671ffe1dbd222"
+                },
+                {
+                    "key": "field_672000e1bd228",
+                    "label": "image",
+                    "name": "image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_671fff16bd223",
+                                "operator": "==",
+                                "value": "Image"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "allow_in_bindings": 0,
+                    "preview_size": "medium",
+                    "parent_repeater": "field_671ffe1dbd222"
+                },
+                {
+                    "key": "field_67265c3ec7833",
+                    "label": "URL",
+                    "name": "url",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_671fff16bd223",
+                                "operator": "==",
+                                "value": "Link"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_671ffe1dbd222"
+                }
+            ]
+        },
+        {
+            "key": "field_672002a00a897",
+            "label": "Above Footer CTA Title",
+            "name": "above_footer_cta_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "So What Do You Say?",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_672002fa0a898",
+            "label": "Above Footer CTA Text",
+            "name": "above_footer_cta_text",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Bacon ipsum dolor amet ea frankfurter consectetur jerky. Beef ribs t-bone consectetur est, culpa prosciutto commodo nostrud fugiat. Veniam lorem meatloaf pancetta, short loin beef ribs t-bone pariatur. Biltong labore doner eu. Laboris tenderloin aliquip burgdoggen labore.\r\n\r\nTempor salami ullamco, pork chop chicken exercitation bresaola ex buffalo sunt nisi. Pork landjaeger eu ball tip minim. Pariatur culpa buffalo pork loin beef. In tenderloin eiusmod shoulder incididunt sirloin. Ground round consequat filet mignon, officia dolore beef biltong deserunt.",
+            "allow_in_bindings": 0,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_672003700a899",
+            "label": "Above Footer CTA Button Icon",
+            "name": "above_footer_cta_button_icon",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "fa-solid fa-caret-right",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_672003ed0a89b",
+            "label": "Above Footer CTA Button Text",
+            "name": "above_footer_cta_button_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Buy Now",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_672003e90a89a",
+            "label": "Above Footer CTA Button URL",
+            "name": "above_footer_cta_button_url",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "https:\/\/",
+            "allow_in_bindings": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_type",
+                "operator": "==",
+                "value": "front_page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1730567948
+}

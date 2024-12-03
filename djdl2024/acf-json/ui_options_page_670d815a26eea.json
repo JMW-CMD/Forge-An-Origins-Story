@@ -1,0 +1,26 @@
+{
+    "key": "ui_options_page_670d815a26eea",
+    "title": "Forge: Custom Content",
+    "active": true,
+    "menu_order": 0,
+    "page_title": "Forge: Custom Content",
+    "menu_slug": "forge-custom-content",
+    "parent_slug": "none",
+    "advanced_configuration": 1,
+    "icon_url": "",
+    "menu_title": "",
+    "position": "",
+    "redirect": 1,
+    "description": "",
+    "menu_icon": {
+        "type": "dashicons",
+        "value": "dashicons-admin-site-alt3"
+    },
+    "update_button": "Update",
+    "updated_message": "Options Updated",
+    "capability": "edit_posts",
+    "data_storage": "options",
+    "post_id": "",
+    "autoload": 0,
+    "modified": 1729364024
+}

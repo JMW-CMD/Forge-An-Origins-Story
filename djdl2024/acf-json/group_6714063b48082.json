@@ -1,0 +1,221 @@
+{
+    "key": "group_6714063b48082",
+    "title": "Tailwind Source",
+    "fields": [
+        {
+            "key": "field_6714127c57cf7",
+            "label": "Use Tailwind?",
+            "name": "use_tailwind",
+            "aria-label": "",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Use Tailwind?": "use_tailwind"
+            },
+            "default_value": [],
+            "return_format": "value",
+            "allow_custom": 0,
+            "allow_in_bindings": 0,
+            "layout": "vertical",
+            "toggle": 0,
+            "save_custom": 0,
+            "custom_choice_button_text": "Add new choice"
+        },
+        {
+            "key": "field_6714063bb700d",
+            "label": "Select Source",
+            "name": "select_source",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6714127c57cf7",
+                        "operator": "==",
+                        "value": "Use Tailwind?"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "cdn": "CDN",
+                "local": "Local"
+            },
+            "default_value": "",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "allow_in_bindings": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_671406db8ca97",
+            "label": "CDN Stylesheet Name",
+            "name": "cdn_stylesheet_name",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6714063bb700d",
+                        "operator": "==",
+                        "value": "cdn"
+                    },
+                    {
+                        "field": "field_6714127c57cf7",
+                        "operator": "==",
+                        "value": "Use Tailwind?"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "tailwind-cdn",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_67141123bd611",
+            "label": "CDN Stylesheet Link",
+            "name": "cdn_stylesheet_link",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6714063bb700d",
+                        "operator": "==",
+                        "value": "cdn"
+                    },
+                    {
+                        "field": "field_6714127c57cf7",
+                        "operator": "==",
+                        "value": "Use Tailwind?"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "https:\/\/cdn.tailwindcss.com",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_671410c48ca98",
+            "label": "Local Stylesheet Name",
+            "name": "local_stylesheet_name",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6714063bb700d",
+                        "operator": "==",
+                        "value": "local"
+                    },
+                    {
+                        "field": "field_6714127c57cf7",
+                        "operator": "==",
+                        "value": "Use Tailwind?"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "tailwind-local",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6714116fbd612",
+            "label": "Local Stylesheet Link",
+            "name": "local_stylesheet_link",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6714063bb700d",
+                        "operator": "==",
+                        "value": "local"
+                    },
+                    {
+                        "field": "field_6714127c57cf7",
+                        "operator": "==",
+                        "value": "Use Tailwind?"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "tailwind.css",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "tailwind-source-select"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1729370365
+}

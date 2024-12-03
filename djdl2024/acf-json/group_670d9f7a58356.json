@@ -1,0 +1,111 @@
+{
+    "key": "group_670d9f7a58356",
+    "title": "Social Sites",
+    "fields": [
+        {
+            "key": "field_670d9f7a25c29",
+            "label": "Social Header",
+            "name": "social_header",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Connect with us on:",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_670d9fa625c2a",
+            "label": "Add Social Site",
+            "name": "add_social_site",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Fontawesome Palette \/ \/ \/ \/ \/ \r\n\r\nfacebook \/\/\/ facebook-f \/\/\/ square-facebook \/\/\/ instagram \/\/\/ square-instagram \/\/\/  youtube \/\/\/ square-youtube \/\/\/ tiktok \/\/\/ snapchat \/\/\/ square-snapchat \/\/\/ x-twitter \/\/\/ square-x-twitter \/\/\/ linkedin \/\/\/ linkedin-in \/\/\/ facebook-messenger \/\/\/ telegram \/\/\/ whatsapp \/\/\/ square-whatsapp \/\/\/ discord \/\/\/ github \/\/\/ github-alt \/\/\/ square-github",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_670da02f25c2b",
+                    "label": "Icon",
+                    "name": "social_site_icon",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "fa-brands fa-",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_670d9fa625c2a"
+                },
+                {
+                    "key": "field_670da03925c2c",
+                    "label": "URL",
+                    "name": "social_site_url",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "https:\/\/",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_670d9fa625c2a"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "social-sites"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1729430758
+}
